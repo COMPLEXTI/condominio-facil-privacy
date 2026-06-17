@@ -37,7 +37,7 @@
 </head>
 <body>
     <h1>Política de Privacidade - Condomínio Fácil</h1>
-    <p class="last-updated">Última atualização: Janeiro de 2025</p>
+    <p class="last-updated">Última atualização: Junho de 2026</p>
 
     <h2>1. Introdução</h2>
     <p>Esta Política de Privacidade descreve como o aplicativo "Condomínio Fácil" coleta, usa e protege suas informações pessoais. Ao usar nosso aplicativo, você concorda com os termos desta política.</p>
@@ -48,11 +48,15 @@
         <li>Nome completo</li>
         <li>Endereço de e-mail</li>
         <li>Número de telefone</li>
-        <li>Informações do condomínio (unidade, bloco)</li>
+        <li>Informações do condomínio (unidade, bloco, lote)</li>
+        <li>CPF (quando informado para boletos ou cadastro)</li>
         <li>Fotos de perfil (quando fornecidas voluntariamente)</li>
+        <li>Token do dispositivo para notificações push</li>
     </ul>
 
-    <h3>2.2 Dados Biométricos</h3>
+    <h3>2.2 Dados de documentos financeiros</h3>
+    <p>Quando o síndico ou administrador utiliza a função "Despesa com IA", o aplicativo pode processar imagens ou PDFs de notas fiscais e recibos contendo valores, datas, descrições e nome de fornecedores visíveis no documento.</p>
+    <h3>2.3 Dados Biométricos</h3>
     <p>O aplicativo pode solicitar acesso a dados biométricos (impressão digital, Face ID) para autenticação segura. Estes dados são processados localmente no seu dispositivo e não são enviados para nossos servidores.</p>
 
     <h2>3. Permissões do Aplicativo</h2>
@@ -85,14 +89,35 @@
         <li>Cumprir obrigações legais</li>
     </ul>
 
-    <h2>5. Compartilhamento de Informações</h2>
-    <p>Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto:</p>
+    <h2>5. Compartilhamento de Informações e Terceiros</h2>
+    <p>Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros para fins de marketing. Compartilhamos dados apenas nas situações abaixo:</p>
     <ul>
         <li>Com outros moradores do mesmo condomínio (apenas informações básicas como nome e unidade)</li>
         <li>Com a administração do condomínio para fins de gestão</li>
+        <li>Com prestadores de serviço essenciais à operação do aplicativo, descritos nesta política</li>
         <li>Quando exigido por lei ou ordem judicial</li>
         <li>Para proteger nossos direitos legais ou a segurança dos usuários</li>
     </ul>
+
+    <h3>5.1 Prestadores de serviço (processadores de dados)</h3>
+    <ul>
+        <li><strong>Google Firebase / Google Cloud:</strong> autenticação, banco de dados (Firestore), armazenamento de arquivos, notificações push e funções em nuvem. Política: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+        <li><strong>Google Gemini (Google LLC):</strong> processamento de imagens/PDFs de documentos de despesa na função opcional "Despesa com IA", somente após consentimento explícito do usuário no aplicativo. Política: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+        <li><strong>Stripe e/ou Mercado Pago:</strong> processamento de pagamentos de taxas condominiais (boletos) e, na versão Android, assinaturas da plataforma. Não utilizamos pagamento in-app de assinatura na versão iOS.</li>
+    </ul>
+
+    <h3>5.2 Uso de inteligência artificial (IA)</h3>
+    <p>A função "Despesa com IA" é opcional e disponível apenas para síndicos/administradores. Antes de qualquer envio, o aplicativo:</p>
+    <ul>
+        <li>Informa quais dados serão enviados (conteúdo do documento: valor, data, fornecedor, descrição visíveis no arquivo)</li>
+        <li>Informa para quem os dados são enviados (Google Gemini via Firebase Cloud Functions)</li>
+        <li>Solicita autorização explícita do usuário ("Autorizo o envio" ou "Não autorizar")</li>
+    </ul>
+    <p><strong>Não enviamos</strong> nesta função: nome, e-mail, CPF, telefone ou foto de perfil do usuário. O documento é transmitido de forma criptografada (HTTPS/TLS) aos nossos servidores e encaminhado ao provedor de IA apenas para extração dos dados da despesa.</p>
+    <p>O Google oferece proteções de privacidade e segurança equivalentes às exigidas por esta política e pela LGPD. Você pode recusar o envio e cadastrar despesas manualmente.</p>
+
+    <h3>5.3 Exclusão de conta</h3>
+    <p>Você pode excluir sua conta a qualquer momento em <strong>Configurações → Excluir minha conta</strong>. Isso remove seu perfil dos nossos sistemas ativos e encerra o acesso ao aplicativo. Alguns registros podem ser mantidos quando exigido por lei ou para fins de auditoria financeira do condomínio.</p>
 
     <h2>6. Segurança dos Dados</h2>
     <p>Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações:</p>
@@ -112,7 +137,7 @@
     <ul>
         <li>Acessar suas informações pessoais</li>
         <li>Corrigir informações incorretas</li>
-        <li>Solicitar a exclusão de suas informações</li>
+        <li>Solicitar a exclusão de suas informações (Configurações → Excluir minha conta)</li>
         <li>Retirar o consentimento para processamento de dados</li>
         <li>Receber uma cópia de suas informações</li>
         <li>Recusar permissões específicas do aplicativo</li>
